@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Tower
+comment1.params=price
+comment1.target=Tower(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=target
+comment3.target=void\ attackTarget(Enemy)
+comment4.params=
+comment4.target=void\ enemyDetector()
+comment5.params=
+comment5.target=int\ getFireRate()
+comment6.params=rate
+comment6.target=void\ setFireRate(int)
+comment7.params=
+comment7.target=int\ getTowerPrice()
+numComments=8

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Enemy
+comment1.params=hp
+comment1.target=Enemy(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ removeObj()
+comment4.params=
+comment4.target=void\ changeImage()
+comment5.params=
+comment5.target=void\ moveAlongPath()
+comment6.params=
+comment6.target=void\ hitByProjectile()
+numComments=7

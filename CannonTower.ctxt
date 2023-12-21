@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CannonTower
+comment1.params=
+comment1.target=CannonTower()
+comment2.params=target
+comment2.target=void\ attackTarget(Enemy)
+numComments=3
