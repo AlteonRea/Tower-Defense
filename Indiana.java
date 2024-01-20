@@ -10,7 +10,7 @@ public class Indiana extends Enemy
 {
       int speed = 4;
     public Indiana(){
-        super(15);
+        super(15, 150);
     }
     public void changeImage() {
         String imageName = "IndianaW" + animationNumber + ".png";

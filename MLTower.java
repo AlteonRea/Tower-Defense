@@ -10,7 +10,7 @@ public class MLTower extends Tower
 
     @Override
     public void attackTarget(Enemy target) {
-        if (getFireRate() > 14) {
+        if (getFireRate() > 25) {
             Projectile projectile = new Missile();
             getWorld().addObject(projectile, getX(), getY());
             projectile.turnTowards(target.getX(), target.getY());

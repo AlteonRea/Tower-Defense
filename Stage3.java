@@ -45,7 +45,7 @@ public class Stage3 extends MyWorld
     
       public void spawnWave(){
             if(worldTime % 20 == 0 && stopSpawn == false){
-                      if(level == 1){
+                if(level == 1){
                     addObject(new Jack(), 1, 30);
                 }else if(level == 2){
                     addObject(new Girl(), 1, 30);

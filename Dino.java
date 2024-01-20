@@ -4,7 +4,7 @@ public class Dino extends Enemy
 {
   int speed = 4;
   public Dino(){
-        super(7);
+        super(7, 30);
     }
     public void changeImage() {
         String imageName = "DinoW" + animationNumber + ".png";

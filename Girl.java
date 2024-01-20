@@ -10,7 +10,7 @@ public class Girl extends Enemy
 {
     int speed = 3;
     public Girl(){
-        super(7);
+        super(7, 15);
     }
     public void changeImage() {
         String imageName = "GirlW" + animationNumber + ".png";

@@ -2,6 +2,4 @@
 comment0.target=CannonBullet
 comment1.params=
 comment1.target=CannonBullet()
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+numComments=2

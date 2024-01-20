@@ -10,7 +10,7 @@ public class CannonTower extends Tower
 
     @Override
     public void attackTarget(Enemy target) {
-        if (getFireRate() > 9) {
+        if (getFireRate() > 13) {
             Projectile projectile = new CannonBullet();
             getWorld().addObject(projectile, getX(), getY());
             projectile.turnTowards(target.getX(), target.getY());

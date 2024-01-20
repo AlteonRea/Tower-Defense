@@ -10,7 +10,7 @@ public class Jack extends Enemy
 {
     int speed = 2;
     public Jack(){
-        super(10);
+        super(10, 80);
     }
     public void changeImage() {
         String imageName = "JackW" + animationNumber + ".png";

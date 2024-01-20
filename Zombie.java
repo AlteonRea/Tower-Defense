@@ -5,7 +5,7 @@ public class Zombie extends Enemy
 {
     int speed = 2;
     public Zombie(){
-        super(5);
+        super(10000, 10);
     }
     public void changeImage() {
         String imageName = "ZombieW" + animationNumber + ".png";

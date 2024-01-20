@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=Projectile
-comment1.params=
-comment1.target=void\ bulletMove()
+comment1.params=damage
+comment1.target=Projectile(int)
 comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment2.target=void\ bulletMove()
+comment3.params=
+comment3.target=int\ getDamage()
+comment4.params=
+comment4.target=void\ act()
+numComments=5

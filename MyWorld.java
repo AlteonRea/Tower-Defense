@@ -12,8 +12,8 @@ public class MyWorld extends World {
     boolean stopSpawn;
     boolean stageSet = false;
 
-    public MyWorld() {    
-        super(840, 600, 1); 
+    public MyWorld() {
+        super(840, 600, 1);  
         Menu menu = new Menu();
         addObject(menu, 720, 300);
         addObject(new MoneyDisplay(), 720, 30);
@@ -21,18 +21,17 @@ public class MyWorld extends World {
         addObject(new CannonDisplay(), 720, 150);
         addObject(new MGDisplay(), 720, 210);
         addObject(new MLDisplay(), 720, 270);
-        resetLife();
-    }
-
-    public void resetLife() {
-        health = 10;
     }
 
     public void act() {
         worldTime++;
         addInTowers();
         spawnWave();
-
+        String key = Greenfoot.getKey();
+        if (key != null && key.equals("r")) {
+            resetData();
+            Greenfoot.setWorld(new MyWorld());
+        }
         if (health < 1) {
             setGameOver();
         }
@@ -41,19 +40,20 @@ public class MyWorld extends World {
             Greenfoot.setWorld(new Stage1());
             stageSet = true;
         } else if (worldTime == 1300 && !stageSet) {
-            money = 200;
+            money = 300;
             Greenfoot.setWorld(new Stage2());
             stageSet = true;
         } else if (worldTime == 3000 && !stageSet){
-            money = 1000;
+            money = 700;
             Greenfoot.setWorld(new Stage3());
             stageSet = true;
         }
     }
-
-    // Common method structure, to be overridden by subclasses
-    protected void createMap() {
-        // Provide a default or common implementation here
+    
+    public void resetData() {
+        health = 10;
+        money = 100;
+        worldTime = 0;
     }
 
     public void setGameOver() {
@@ -89,6 +89,5 @@ public class MyWorld extends World {
     }
 
     public void spawnWave(){
-        // Provide a common implementation or leave it empty
     }
 }

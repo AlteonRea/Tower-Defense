@@ -8,8 +8,10 @@ public abstract class Enemy extends Actor
     int animationNumber = 1;
     int timeLapse = 0;
     boolean remove = false;
-    public Enemy(int hp){
+    int moneyDrop;
+    public Enemy(int hp, int moneyDrop){
         this.hp = hp;
+        this.moneyDrop = moneyDrop;
     }
     
     public void act()
@@ -66,11 +68,11 @@ public abstract class Enemy extends Actor
     public void hitByProjectile(){
         Actor projectile = getOneIntersectingObject(Projectile.class);
         if(projectile != null){
-            hp--;
+            hp -= ((Projectile) projectile).getDamage();
             getWorld().removeObject(projectile);
         }
         if(hp < 1){
-            world.money += 50;
+            world.money += moneyDrop;
             getWorld().removeObject(this);
         }
     }
